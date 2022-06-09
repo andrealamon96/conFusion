@@ -12,9 +12,10 @@ import {
   MatListModule,
   MatToolbarModule,
 } from "@angular/material";
+import { DishDetailComponent } from "./components/dish-detail/dish-detail.component";
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent],
+  declarations: [AppComponent, MenuComponent, DishDetailComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
