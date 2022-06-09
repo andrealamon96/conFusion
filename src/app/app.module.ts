@@ -5,15 +5,24 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from "./app.component";
 import { MenuComponent } from "./components/menu/menu.component";
-import { MatListModule, MatToolbarModule } from "@angular/material";
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatGridListModule,
+  MatListModule,
+  MatToolbarModule,
+} from "@angular/material";
 
 @NgModule({
   declarations: [AppComponent, MenuComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule,
+    MatGridListModule,
     MatListModule,
+    MatToolbarModule,
     FlexLayoutModule,
   ],
   providers: [],
