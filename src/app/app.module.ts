@@ -13,6 +13,7 @@ import {
   MatToolbarModule,
 } from "@angular/material";
 import { DishDetailComponent } from "./components/dish-detail/dish-detail.component";
+import { DishService } from "./services/dish.service";
 
 @NgModule({
   declarations: [AppComponent, MenuComponent, DishDetailComponent],
@@ -26,7 +27,7 @@ import { DishDetailComponent } from "./components/dish-detail/dish-detail.compon
     MatToolbarModule,
     FlexLayoutModule,
   ],
-  providers: [],
+  providers: [DishService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
