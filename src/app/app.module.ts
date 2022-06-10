@@ -14,9 +14,11 @@ import {
 } from "@angular/material";
 import { DishDetailComponent } from "./components/dish-detail/dish-detail.component";
 import { DishService } from "./services/dish.service";
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, DishDetailComponent],
+  declarations: [AppComponent, MenuComponent, DishDetailComponent, HeaderComponent, FooterComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
