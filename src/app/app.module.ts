@@ -16,10 +16,14 @@ import { DishDetailComponent } from "./components/dish-detail/dish-detail.compon
 import { DishService } from "./services/dish.service";
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { AppRoutingModule } from "./app-routing/app-routing.module";
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, DishDetailComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, MenuComponent, DishDetailComponent, HeaderComponent, FooterComponent, ContactComponent, HomeComponent],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
