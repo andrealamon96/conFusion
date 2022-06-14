@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from "./app-routing/app-routing.module";
+import { PromotionService } from "./services/promotion.service";
 
 @NgModule({
   declarations: [AppComponent, MenuComponent, DishDetailComponent, HeaderComponent, FooterComponent, ContactComponent, HomeComponent],
@@ -33,7 +34,7 @@ import { AppRoutingModule } from "./app-routing/app-routing.module";
     MatToolbarModule,
     FlexLayoutModule,
   ],
-  providers: [DishService],
+  providers: [DishService, PromotionService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
